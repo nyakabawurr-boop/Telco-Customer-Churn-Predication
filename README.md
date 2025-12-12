@@ -1,6 +1,6 @@
 # Predictive Analytics for Telco Customer Churn
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/YOUR_NOTEBOOK_LINK_HERE](https://colab.research.google.com/drive/144GQEmf4GCDoauPvRseTRNFpF9kYDZOB?usp=sharing ))
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/drive/144GQEmf4GCDoauPvRseTRNFpF9kYDZOB?usp=sharing )])
 
 ---
 
