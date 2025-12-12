@@ -140,72 +140,14 @@ This project was implemented in Python 3 and relied on the following key librari
 
 ---
 
-## 8. How to Run This Project
-
-### Option 1: Interactive Streamlit App
-
-A beautiful, interactive Streamlit application is available to explore the project:
-
-```bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the app
-streamlit run app.py
-```
-
-The app features:
-- **Horizontal Navigation:** Easy access to all project sections
-- **Data Exploration:** Interactive visualizations and distributions
-- **Analysis:** Correlation matrices and feature importance
-- **Results:** Model performance metrics and confusion matrices
-- **Insights:** Key findings and business recommendations
-
-### Option 2: Jupyter Notebook (Google Colab)
-
-To explore the analysis and run the code yourself, you can use the provided Jupyter Notebook.
-
-1.  **Open in Google Colab:**
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/144GQEmf4GCDoauPvRseTRNFpF9kYDZOB?usp=sharing)
-
-2.  **Run the Cells:** Execute the cells sequentially to load the data, perform the analysis, and train the models. You will be prompted to enter your Kaggle API credentials to download the dataset.
-
----
-
-## 9. Project Structure
-
-```
-Telco-Customer-Churn-Analysis/
-├── app.py                      # Main Streamlit application
-├── requirements.txt            # Python dependencies
-├── README.md                   # Project documentation
-├── images/                     # Visualization images
-│   ├── churn_distribution.png
-│   ├── tenure_distribution.png
-│   ├── correlation_matrix.png
-│   ├── feature_importance.png
-│   ├── monthly_charges_by_churn.png
-│   ├── churn_by_contract.png
-│   ├── turnure_vs_monthly_charges.png
-│   ├── roc_randomforest.png
-│   ├── roc_xgboost.png
-│   ├── roc_logistic.png
-│   ├── confusion_matrix_randomforest.png
-│   ├── confusion_matrix_xgboost.png
-│   └── confusion_matrix_logistic.png
-└── *.py                        # Helper scripts
-```
-
----
-
-## 10. Acknowledgments
+## 8. Acknowledgments
 
 *   **Dataset:** The Telco Customer Churn dataset was provided by IBM and is available on Kaggle.
 *   **AI Assistance:** The structure and content of this analysis were developed with assistance from Gemini, an AI model by Google.
 
 ---
 
-## 11. Repository Links
+## 9. Repository Links
 
 *   **GitHub Repository:** [https://github.com/nyakabawurr-boop/Telco-Customer-Churn-Analysis](https://github.com/nyakabawurr-boop/Telco-Customer-Churn-Analysis)
 *   **Kaggle Dataset:** [https://www.kaggle.com/datasets/blastchar/telco-customer-churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
