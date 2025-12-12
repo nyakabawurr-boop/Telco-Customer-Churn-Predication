@@ -84,8 +84,7 @@ This project was implemented in Python 3 and relied on the following key librari
 To explore the analysis and run the code yourself, you can use the provided Jupyter Notebook.
 
 1.  **Open in Google Colab:**
-    [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/YOUR_NOTEBOOK_LINK_HERE)
-    *(Note: Please replace `YOUR_NOTEBOOK_LINK_HERE` with the public link to your Colab notebook.)*
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/144GQEmf4GCDoauPvRseTRNFpF9kYDZOB?usp=sharing)
 
 2.  **Run the Cells:** Execute the cells sequentially to load the data, perform the analysis, and train the models. You will be prompted to enter your Kaggle API credentials to download the dataset.
 
