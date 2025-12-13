@@ -30,14 +30,20 @@ The analysis is based on the **Telco Customer Churn** dataset, publicly availabl
 
 The initial exploration of the dataset revealed important patterns:
 
-![Distribution of Customer Churn](images/churn_distribution.png)
-
-*Distribution of Customer Churn - showing class imbalance between churned and retained customers*
-
-![Distribution of Tenure](images/tenure_distribution.png)
-
-*Distribution of Tenure - revealing a U-shaped distribution with peaks at low and high tenure values*
-
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img alt="churn_distribution" src="https://github.com/user-attachments/assets/2caa3467-b9b0-458b-b624-f90026ee022b" width="100%" />
+      <br/>
+      <em>Distribution of Customer Churn - showing class imbalance between churned and retained customers</em>
+    </td>
+    <td align="center" width="50%">
+      <img alt="tenure_distribution" src="https://github.com/user-attachments/assets/9a796b72-640a-4c42-aa43-08ae1c1c5302" width="100%" />
+      <br/>
+      <em>Distribution of Tenure - revealing a U-shaped distribution with peaks at low and high tenure values</em>
+    </td>
+  </tr>
+</table>
 ---
 
 ## 4. Methodology
@@ -57,25 +63,39 @@ The project followed a structured data analysis workflow:
 
 ### Analysis Visualizations
 
-![Correlation Matrix](images/correlation_matrix.png)
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img alt="correlation_matrix" src="https://github.com/user-attachments/assets/0ca27e7c-6314-41f1-b618-4123369a0e30" width="100%" />
+      <br/>
+      <em>Correlation Matrix showing relationships between features and churn probability</em>
+    </td>
+    <td align="center" width="50%">
+      <img alt="feature_importance" src="https://github.com/user-attachments/assets/23fd5b13-d505-4422-9ad5-fe3fbe2a7372" width="100%" />
+      <br/>
+      <em>Top 15 Feature Importances for Churn Prediction (Random Forest) - Contract_Month-to-month is the most important predictor</em>
+    </td>
+  </tr>
 
-*Correlation Matrix showing relationships between features and churn probability*
+  <tr>
+    <td align="center" width="50%">
+      <img alt="monthly_charges_by_churn" src="https://github.com/user-attachments/assets/6565c3f3-f32d-4c93-865e-1686d05b2122" width="100%" />
+      <br/>
+      <em>Monthly Charges by Churn Status - Churned customers tend to have higher monthly charges</em>
+    </td>
+    <td align="center" width="50%">
+      <img alt="churn_by_contract" src="https://github.com/user-attachments/assets/57eb9713-ff99-47ef-aaf5-989260ae24f8" width="100%" />
+      <br/>
+      <em>Churn Rate by Contract Type - Month-to-month contracts show significantly higher churn rates</em>
+    </td>
+  </tr>
+</table>
 
-![Feature Importance](images/feature_importance.png)
-
-*Top 15 Feature Importances for Churn Prediction (Random Forest) - Contract_Month-to-month is the most important predictor*
-
-![Monthly Charges by Churn Status](images/monthly_charges_by_churn.png)
-
-*Monthly Charges by Churn Status - Churned customers tend to have higher monthly charges*
-
-![Churn Rate by Contract Type](images/churn_by_contract.png)
-
-*Churn Rate by Contract Type - Month-to-month contracts show significantly higher churn rates*
-
-![Tenure vs Monthly Charges](images/turnure_vs_monthly_charges.png)
-
-*Tenure vs. Monthly Charges Analysis - Relationship between tenure, charges, and churn patterns*
+<p align="center">
+  <img alt="turnure_vs_monthly_charges" src="https://github.com/user-attachments/assets/fcf01b01-4602-407c-b11f-d786aeb37cb1" width="70%" />
+  <br/>
+  <em>Tenure vs. Monthly Charges Analysis - Relationship between tenure, charges, and churn patterns</em>
+</p>
 
 ---
 
@@ -92,29 +112,49 @@ Based on the evaluation, the **Tuned Logistic Regression model** was selected as
 
 ### Model Performance
 
-![ROC Curve - Random Forest](images/roc_randomforest.png)
+<!-- ROC Curves: 3 images in one row -->
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img alt="roc_randomforest" src="https://github.com/user-attachments/assets/65b7ba06-f465-4b58-b11f-049dc8a665df" width="100%" />
+      <br/>
+      <em>ROC Curve - Tuned Random Forest Classifier (AUC = 0.82)</em>
+    </td>
+    <td align="center" width="33%">
+      <img alt="roc_xgboost" src="https://github.com/user-attachments/assets/34404ce7-eba2-4042-bcd9-72da34959dbb" width="100%" />
+      <br/>
+      <em>ROC Curve - Tuned XGBoost Classifier (AUC = 0.82)</em>
+    </td>
+    <td align="center" width="33%">
+      <img alt="roc_logistic" src="https://github.com/user-attachments/assets/81f651f0-5471-4329-ab8f-5681c9bdb3a2" width="100%" />
+      <br/>
+      <em>ROC Curve - Tuned Logistic/Lasso Regression (AUC = 0.82)</em>
+    </td>
+  </tr>
+</table>
 
-*ROC Curve - Tuned Random Forest Classifier (AUC = 0.82)*
+<br/>
 
-![ROC Curve - XGBoost](images/roc_xgboost.png)
-
-*ROC Curve - Tuned XGBoost Classifier (AUC = 0.82)*
-
-![ROC Curve - Logistic Regression](images/roc_logistic.png)
-
-*ROC Curve - Tuned Logistic/Lasso Regression (AUC = 0.82)*
-
-![Confusion Matrix - Random Forest](images/confusion_matrix_randomforest.png)
-
-*Confusion Matrix - Tuned Random Forest Classifier*
-
-![Confusion Matrix - XGBoost](images/confusion_matrix_xgboost.png)
-
-*Confusion Matrix - Tuned XGBoost Classifier*
-
-![Confusion Matrix - Logistic Regression](images/confusion_matrix_logistic.png)
-
-*Confusion Matrix - Tuned Logistic/Lasso Regression*
+<!-- Confusion Matrices: 3 images in one row -->
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img alt="confusion_matrix_randomforest" src="https://github.com/user-attachments/assets/bd12af33-0893-4939-b581-5d7cc292943d" width="100%" />
+      <br/>
+      <em>Confusion Matrix - Tuned Random Forest Classifier</em>
+    </td>
+    <td align="center" width="33%">
+      <img alt="confusion_matrix_xgboost" src="https://github.com/user-attachments/assets/8e1ab92d-a8af-4dfb-9311-a953cfed457f" width="100%" />
+      <br/>
+      <em>Confusion Matrix - Tuned XGBoost Classifier</em>
+    </td>
+    <td align="center" width="33%">
+      <img alt="confusion_matrix_logistic" src="https://github.com/user-attachments/assets/76e2d3f7-db68-4ed2-8298-dcf7b78bebe6" width="100%" />
+      <br/>
+      <em>Confusion Matrix - Tuned Logistic/Lasso Regression</em>
+    </td>
+  </tr>
+</table>
 
 ---
 
