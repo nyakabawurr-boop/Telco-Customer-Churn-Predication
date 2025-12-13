@@ -44,6 +44,7 @@ The initial exploration of the dataset revealed important patterns:
     </td>
   </tr>
 </table>
+
 ---
 
 ## 4. Methodology
@@ -71,31 +72,25 @@ The project followed a structured data analysis workflow:
       <em>Correlation Matrix showing relationships between features and churn probability</em>
     </td>
     <td align="center" width="50%">
-      <img alt="feature_importance" src="https://github.com/user-attachments/assets/23fd5b13-d505-4422-9ad5-fe3fbe2a7372" width="100%" />
+      <img alt="monthly_charges_by_churn" src="https://github.com/user-attachments/assets/6565c3f3-f32d-4c93-865e-1686d05b2122" width="100%" />
       <br/>
-      <em>Top 15 Feature Importances for Churn Prediction (Random Forest) - Contract_Month-to-month is the most important predictor</em>
+      <em>Monthly Charges by Churn Status - Churned customers tend to have higher monthly charges</em>
     </td>
   </tr>
 
   <tr>
     <td align="center" width="50%">
-      <img alt="monthly_charges_by_churn" src="https://github.com/user-attachments/assets/6565c3f3-f32d-4c93-865e-1686d05b2122" width="100%" />
-      <br/>
-      <em>Monthly Charges by Churn Status - Churned customers tend to have higher monthly charges</em>
-    </td>
-    <td align="center" width="50%">
       <img alt="churn_by_contract" src="https://github.com/user-attachments/assets/57eb9713-ff99-47ef-aaf5-989260ae24f8" width="100%" />
       <br/>
       <em>Churn Rate by Contract Type - Month-to-month contracts show significantly higher churn rates</em>
     </td>
+    <td align="center" width="50%">
+      <img alt="turnure_vs_monthly_charges" src="https://github.com/user-attachments/assets/fcf01b01-4602-407c-b11f-d786aeb37cb1" width="100%" />
+      <br/>
+      <em>Tenure vs. Monthly Charges Analysis - Relationship between tenure, charges, and churn patterns</em>
+    </td>
   </tr>
 </table>
-
-<p align="center">
-  <img alt="turnure_vs_monthly_charges" src="https://github.com/user-attachments/assets/fcf01b01-4602-407c-b11f-d786aeb37cb1" width="70%" />
-  <br/>
-  <em>Tenure vs. Monthly Charges Analysis - Relationship between tenure, charges, and churn patterns</em>
-</p>
 
 ---
 
@@ -156,6 +151,20 @@ Based on the evaluation, the **Tuned Logistic Regression model** was selected as
   </tr>
 </table>
 
+<br/>
+
+#### Feature Importance Analysis
+
+The Random Forest model provides a clear ranking of feature importance, which helps in 
+understanding the key drivers of churn. The bar chart below shows the top 15 most important 
+features.
+
+<p align="center">
+  <img alt="feature_importance" src="https://github.com/user-attachments/assets/23fd5b13-d505-4422-9ad5-fe3fbe2a7372" width="80%" />
+  <br/>
+  <em>Top 15 Feature Importances for Churn Prediction (Random Forest) - Contract_Month-to-month is the most important predictor</em>
+</p>
+
 ---
 
 ## 6. Business Recommendations
@@ -163,7 +172,7 @@ Based on the evaluation, the **Tuned Logistic Regression model** was selected as
 Based on the findings, the following actionable recommendations are proposed:
 
 1.  **Incentivize Long-Term Contracts:** Develop targeted campaigns to encourage month-to-month customers to switch to annual or two-year contracts.
-2.  **Promote Value-Added Services:** Increase the adoption of Tech Support, Online Security, and Online Backup by bundling them or offering promotional trials.
+2.  **Promote Value-Added Services:** Increase the adoption of Tech Support, Online Security, Online Backup by bundling them or offering promotional trials.
 3.  **Focus on Early-Stage Customers:** Implement a proactive onboarding program for new customers to address their needs and improve their initial experience.
 4.  **Review Payment Processes:** Investigate why customers using electronic checks are more likely to churn and encourage the use of more stable, automated payment methods.
 
@@ -186,12 +195,14 @@ This project was implemented in Python 3 and relied on the following key librari
 *   **AI Assistance:** The structure and content of this analysis were developed with assistance from Gemini, an AI model by Google.
 
 ---
+
 ## 9. Repository Links
 
 *   **GitHub Repository:** [https://github.com/nyakabawurr-boop/Telco-Customer-Churn-Analysis](https://github.com/nyakabawurr-boop/Telco-Customer-Churn-Analysis)
 *   **Kaggle Dataset:** [https://www.kaggle.com/datasets/blastchar/telco-customer-churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 *   **Google Colab Notebook:** [https://colab.research.google.com/drive/144GQEmf4GCDoauPvRseTRNFpF9kYDZOB](https://colab.research.google.com/drive/144GQEmf4GCDoauPvRseTRNFpF9kYDZOB?usp=sharing)
 *   **Telco Customer Churn Web:** [https://telco-customer-churn-analysis-zb3bnwbvy7fn6eafazfg8q.streamlit.app/](https://telco-customer-churn-analysis-zb3bnwbvy7fn6eafazfg8q.streamlit.app/)
+
 ---
 
 **Course:** ISOM 835 - Predictive Analytics Modelling  
