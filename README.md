@@ -186,13 +186,12 @@ This project was implemented in Python 3 and relied on the following key librari
 *   **AI Assistance:** The structure and content of this analysis were developed with assistance from Gemini, an AI model by Google.
 
 ---
-
 ## 9. Repository Links
 
 *   **GitHub Repository:** [https://github.com/nyakabawurr-boop/Telco-Customer-Churn-Analysis](https://github.com/nyakabawurr-boop/Telco-Customer-Churn-Analysis)
 *   **Kaggle Dataset:** [https://www.kaggle.com/datasets/blastchar/telco-customer-churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 *   **Google Colab Notebook:** [https://colab.research.google.com/drive/144GQEmf4GCDoauPvRseTRNFpF9kYDZOB](https://colab.research.google.com/drive/144GQEmf4GCDoauPvRseTRNFpF9kYDZOB?usp=sharing)
-
+*   **Telco Customer Churn Web:** [https://telco-customer-churn-analysis-zb3bnwbvy7fn6eafazfg8q.streamlit.app/](https://telco-customer-churn-analysis-zb3bnwbvy7fn6eafazfg8q.streamlit.app/)
 ---
 
 **Course:** ISOM 835 - Predictive Analytics Modelling  
